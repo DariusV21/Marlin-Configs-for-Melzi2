@@ -82,8 +82,8 @@
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN                             24  // Analog Input (pin 33 extruder)  // dvamod 7
-#define TEMP_BED_PIN                           25  // Analog Input (pin 34 bed) // dvamod 6
+#define TEMP_0_PIN                             7  // Analog Input (pin 33 extruder)  // dvamod 7
+#define TEMP_BED_PIN                           6  // Analog Input (pin 34 bed) // dvamod 6
 
 //
 // Heaters / Fans
@@ -104,16 +104,16 @@
 
 #else
 
- // #define HEATER_BED_PIN                      14  // (bed)
- // #define X_ENABLE_PIN                         4
- // #define Y_ENABLE_PIN                         4
- // #define Z_ENABLE_PIN                         4
- // #define E0_ENABLE_PIN                        4
+ #define HEATER_BED_PIN                      14  // (bed)
+ #define X_ENABLE_PIN                         4
+ #define Y_ENABLE_PIN                         4
+ #define Z_ENABLE_PIN                         4
+ #define E0_ENABLE_PIN                        4
 
 #endif
 
 #if !defined(FAN_PIN) && (MB(AZTEEG_X1, STB_11) || IS_MELZI)
-  // #define FAN_PIN                              4  // Works for Panelolu2 too
+   #define FAN_PIN                              -1  // Works for Panelolu2 too
 #endif
 
 //
