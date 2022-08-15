@@ -1,1 +1,1 @@
-My printer configs for Marlin 2.0 firmware\
+My printer configs for Marlin 2.0.9.2 firmware\
